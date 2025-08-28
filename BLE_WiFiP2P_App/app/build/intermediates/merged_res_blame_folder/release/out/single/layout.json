@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.example.blewifip2p.app-mergeReleaseResources-34:/layout/fragment_ble.xml",
+        "source": "com.example.blewifip2p.app-main-36:/layout/fragment_ble.xml"
+    },
+    {
+        "merged": "com.example.blewifip2p.app-mergeReleaseResources-34:/layout/activity_main.xml",
+        "source": "com.example.blewifip2p.app-main-36:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.blewifip2p.app-mergeReleaseResources-34:/layout/fragment_transfer.xml",
+        "source": "com.example.blewifip2p.app-main-36:/layout/fragment_transfer.xml"
+    },
+    {
+        "merged": "com.example.blewifip2p.app-mergeReleaseResources-34:/layout/fragment_wifip2p.xml",
+        "source": "com.example.blewifip2p.app-main-36:/layout/fragment_wifip2p.xml"
+    }
+]

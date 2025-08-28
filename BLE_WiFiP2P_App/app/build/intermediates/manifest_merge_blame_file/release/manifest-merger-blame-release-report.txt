@@ -1,0 +1,250 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.blewifip2p"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- BLE Permissions -->
+12    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+12-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:6:5-76
+12-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:6:22-73
+13    <uses-permission
+13-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:7:5-73
+14        android:name="android.permission.BLUETOOTH_SCAN"
+14-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:7:22-70
+15        android:usesPermissionFlags="neverForLocation" />
+15-->[com.polidea.rxandroidble2:rxandroidble:1.18.0] /Users/dako22/.gradle/caches/transforms-3/f2f17b3fa7a368eb2f0ed0371cb973aa/transformed/rxandroidble-1.18.0/AndroidManifest.xml:24:9-55
+16    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+16-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:8:5-78
+16-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:8:22-75
+17    <uses-permission
+17-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:9:5-68
+18        android:name="android.permission.BLUETOOTH"
+18-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:9:22-65
+19        android:maxSdkVersion="30" />
+19-->[com.polidea.rxandroidble2:rxandroidble:1.18.0] /Users/dako22/.gradle/caches/transforms-3/f2f17b3fa7a368eb2f0ed0371cb973aa/transformed/rxandroidble-1.18.0/AndroidManifest.xml:12:9-35
+20    <uses-permission
+20-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:10:5-74
+21        android:name="android.permission.BLUETOOTH_ADMIN"
+21-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:10:22-71
+22        android:maxSdkVersion="30" />
+22-->[com.polidea.rxandroidble2:rxandroidble:1.18.0] /Users/dako22/.gradle/caches/transforms-3/f2f17b3fa7a368eb2f0ed0371cb973aa/transformed/rxandroidble-1.18.0/AndroidManifest.xml:15:9-35
+23
+24    <!-- WiFiP2P Permissions -->
+25    <uses-feature
+25-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:13:5-89
+26        android:name="android.hardware.wifi.direct"
+26-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:13:19-62
+27        android:required="true" />
+27-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:13:63-86
+28
+29    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+29-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:14:5-76
+29-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:14:22-73
+30    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+30-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:15:5-76
+30-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:15:22-73
+31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+31-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:16:5-79
+31-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:16:22-76
+32    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+32-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:17:5-79
+32-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:17:22-76
+33    <uses-permission android:name="android.permission.INTERNET" />
+33-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:18:5-67
+33-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:18:22-64
+34    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" />
+34-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:19:5-78
+34-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:19:22-75
+35
+36    <!-- Location Permissions (required for BLE scanning) -->
+37    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+37-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:22:5-81
+37-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:22:22-78
+38    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+38-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:23:5-79
+38-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:23:22-76
+39
+40    <!-- Storage Permissions -->
+41    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+41-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:26:5-80
+41-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:26:22-77
+42    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+42-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:27:5-81
+42-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:27:22-78
+43
+44    <!-- Other Permissions -->
+45    <uses-permission android:name="android.permission.WAKE_LOCK" />
+45-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:30:5-68
+45-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:30:22-65
+46    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+46-->[glasses_sdk_20250723_v01.aar] /Users/dako22/.gradle/caches/transforms-3/3058734458f8898c56835fdea4482d07/transformed/glasses_sdk_20250723_v01/AndroidManifest.xml:9:5-77
+46-->[glasses_sdk_20250723_v01.aar] /Users/dako22/.gradle/caches/transforms-3/3058734458f8898c56835fdea4482d07/transformed/glasses_sdk_20250723_v01/AndroidManifest.xml:9:22-74
+47
+48    <permission
+48-->[androidx.core:core:1.13.1] /Users/dako22/.gradle/caches/transforms-3/27729d10b71830fb9e6411d932a56a41/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+49        android:name="com.example.blewifip2p.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+49-->[androidx.core:core:1.13.1] /Users/dako22/.gradle/caches/transforms-3/27729d10b71830fb9e6411d932a56a41/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+50        android:protectionLevel="signature" />
+50-->[androidx.core:core:1.13.1] /Users/dako22/.gradle/caches/transforms-3/27729d10b71830fb9e6411d932a56a41/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+51
+52    <uses-permission android:name="com.example.blewifip2p.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- required for API 23 - 30, no android:maxSdkVersion because of a potential breaking change -->
+52-->[androidx.core:core:1.13.1] /Users/dako22/.gradle/caches/transforms-3/27729d10b71830fb9e6411d932a56a41/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+52-->[androidx.core:core:1.13.1] /Users/dako22/.gradle/caches/transforms-3/27729d10b71830fb9e6411d932a56a41/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+53    <!-- TODO: add android:maxSdkVersion on 2.0.0 -->
+54    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+54-->[com.polidea.rxandroidble2:rxandroidble:1.18.0] /Users/dako22/.gradle/caches/transforms-3/f2f17b3fa7a368eb2f0ed0371cb973aa/transformed/rxandroidble-1.18.0/AndroidManifest.xml:18:5-88
+54-->[com.polidea.rxandroidble2:rxandroidble:1.18.0] /Users/dako22/.gradle/caches/transforms-3/f2f17b3fa7a368eb2f0ed0371cb973aa/transformed/rxandroidble-1.18.0/AndroidManifest.xml:18:29-85
+55    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
+55-->[com.polidea.rxandroidble2:rxandroidble:1.18.0] /Users/dako22/.gradle/caches/transforms-3/f2f17b3fa7a368eb2f0ed0371cb973aa/transformed/rxandroidble-1.18.0/AndroidManifest.xml:19:5-86
+55-->[com.polidea.rxandroidble2:rxandroidble:1.18.0] /Users/dako22/.gradle/caches/transforms-3/f2f17b3fa7a368eb2f0ed0371cb973aa/transformed/rxandroidble-1.18.0/AndroidManifest.xml:19:29-83
+56
+57    <application
+57-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:32:5-73:19
+58        android:name="com.example.blewifip2p.BLEWiFiP2PApplication"
+58-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:33:9-46
+59        android:allowBackup="true"
+59-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:34:9-35
+60        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+60-->[androidx.core:core:1.13.1] /Users/dako22/.gradle/caches/transforms-3/27729d10b71830fb9e6411d932a56a41/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+61        android:dataExtractionRules="@xml/data_extraction_rules"
+61-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:35:9-65
+62        android:extractNativeLibs="false"
+63        android:fullBackupContent="@xml/backup_rules"
+63-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:36:9-54
+64        android:icon="@mipmap/ic_launcher"
+64-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:37:9-43
+65        android:label="@string/app_name"
+65-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:38:9-41
+66        android:requestLegacyExternalStorage="true"
+66-->[glasses_sdk_20250723_v01.aar] /Users/dako22/.gradle/caches/transforms-3/3058734458f8898c56835fdea4482d07/transformed/glasses_sdk_20250723_v01/AndroidManifest.xml:17:9-52
+67        android:roundIcon="@mipmap/ic_launcher_round"
+67-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:39:9-54
+68        android:supportsRtl="true"
+68-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:40:9-35
+69        android:theme="@style/Theme.BLE_WiFiP2P_App" >
+69-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:41:9-53
+70        <activity
+70-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:44:9-53:20
+71            android:name="com.example.blewifip2p.ui.MainActivity"
+71-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:45:13-44
+72            android:exported="true"
+72-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:46:13-36
+73            android:label="@string/app_name"
+73-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:47:13-45
+74            android:theme="@style/Theme.BLE_WiFiP2P_App" >
+74-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:48:13-57
+75            <intent-filter>
+75-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:49:13-52:29
+76                <action android:name="android.intent.action.MAIN" />
+76-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:50:17-69
+76-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:50:25-66
+77
+78                <category android:name="android.intent.category.LAUNCHER" />
+78-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:51:17-77
+78-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:51:27-74
+79            </intent-filter>
+80        </activity>
+81        <activity
+81-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:55:9-59:60
+82            android:name="com.example.blewifip2p.ui.DeviceScanActivity"
+82-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:56:13-50
+83            android:exported="false"
+83-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:57:13-37
+84            android:label="@string/scan_devices"
+84-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:58:13-49
+85            android:theme="@style/Theme.BLE_WiFiP2P_App" />
+85-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:59:13-57
+86        <activity
+86-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:61:9-65:60
+87            android:name="com.example.blewifip2p.ui.FileTransferActivity"
+87-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:62:13-52
+88            android:exported="false"
+88-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:63:13-37
+89            android:label="@string/file_transfer"
+89-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:64:13-50
+90            android:theme="@style/Theme.BLE_WiFiP2P_App" />
+90-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:65:13-57
+91        <activity
+91-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:67:9-71:60
+92            android:name="com.example.blewifip2p.ui.OtaUpdateActivity"
+92-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:68:13-49
+93            android:exported="false"
+93-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:69:13-37
+94            android:label="@string/ota_update"
+94-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:70:13-47
+95            android:theme="@style/Theme.BLE_WiFiP2P_App" />
+95-->/Users/dako22/Documents/GitHub/android_ble_enable_wifip2p/BLE_WiFiP2P_App/app/src/main/AndroidManifest.xml:71:13-57
+96
+97        <provider
+97-->[androidx.emoji2:emoji2:1.3.0] /Users/dako22/.gradle/caches/transforms-3/6c333e245e14ce26f6ac7491dc17208f/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+98            android:name="androidx.startup.InitializationProvider"
+98-->[androidx.emoji2:emoji2:1.3.0] /Users/dako22/.gradle/caches/transforms-3/6c333e245e14ce26f6ac7491dc17208f/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+99            android:authorities="com.example.blewifip2p.androidx-startup"
+99-->[androidx.emoji2:emoji2:1.3.0] /Users/dako22/.gradle/caches/transforms-3/6c333e245e14ce26f6ac7491dc17208f/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+100            android:exported="false" >
+100-->[androidx.emoji2:emoji2:1.3.0] /Users/dako22/.gradle/caches/transforms-3/6c333e245e14ce26f6ac7491dc17208f/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+101            <meta-data
+101-->[androidx.emoji2:emoji2:1.3.0] /Users/dako22/.gradle/caches/transforms-3/6c333e245e14ce26f6ac7491dc17208f/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+102                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+102-->[androidx.emoji2:emoji2:1.3.0] /Users/dako22/.gradle/caches/transforms-3/6c333e245e14ce26f6ac7491dc17208f/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+103                android:value="androidx.startup" />
+103-->[androidx.emoji2:emoji2:1.3.0] /Users/dako22/.gradle/caches/transforms-3/6c333e245e14ce26f6ac7491dc17208f/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+104            <meta-data
+104-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dako22/.gradle/caches/transforms-3/44c22a29cdd479df7121d1c898359b3f/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+105                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+105-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dako22/.gradle/caches/transforms-3/44c22a29cdd479df7121d1c898359b3f/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+106                android:value="androidx.startup" />
+106-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/dako22/.gradle/caches/transforms-3/44c22a29cdd479df7121d1c898359b3f/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+107            <meta-data
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+108                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+109                android:value="androidx.startup" />
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+110        </provider>
+111
+112        <receiver
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+113            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+113-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+114            android:directBootAware="false"
+114-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+115            android:enabled="true"
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+116            android:exported="true"
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+117            android:permission="android.permission.DUMP" >
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+118            <intent-filter>
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+119                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+120            </intent-filter>
+121            <intent-filter>
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+122                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+123            </intent-filter>
+124            <intent-filter>
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+125                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+126            </intent-filter>
+127            <intent-filter>
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+128                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/dako22/.gradle/caches/transforms-3/9c1d98cf09ccc3b23d081b4cea596ebf/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+129            </intent-filter>
+130        </receiver>
+131    </application>
+132
+133</manifest>

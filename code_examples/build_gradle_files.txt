@@ -1,0 +1,119 @@
+# Build Files and Dependencies
+
+## heycyan_rev Project Dependencies
+File: heycyan_rev/app/build.gradle.kts
+
+```gradle
+dependencies {
+  // Android core dependencies
+  implementation("androidx.appcompat:appcompat:1.7.0")
+  implementation("androidx.core:core-ktx:1.13.1")
+  implementation("com.google.android.material:material:1.12.0")
+  implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+  implementation("androidx.recyclerview:recyclerview:1.3.2")
+  implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+  implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+  implementation("androidx.fragment:fragment-ktx:1.6.2")
+  implementation("androidx.activity:activity-ktx:1.8.2")
+  
+  // Event bus
+  implementation("org.greenrobot:eventbus:3.3.1")
+  
+  // Networking
+  implementation("com.squareup.okhttp3:okhttp:4.12.0")
+  implementation("com.squareup.retrofit2:retrofit:2.9.0")
+  implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+  
+  // JSON parsing
+  implementation("com.squareup.moshi:moshi:1.15.0")
+  implementation("com.squareup.moshi:moshi-kotlin:1.15.0")
+  kapt("com.squareup.moshi:moshi-kotlin-codegen:1.15.0")
+  
+  // Logging
+  implementation("com.elvishew:xlog:1.11.0")
+  
+  // Image loading and processing
+  implementation("com.github.bumptech.glide:glide:4.16.0")
+  kapt("com.github.bumptech.glide:compiler:4.16.0")
+  
+  // File download
+  implementation("com.amitshekhar.android:android-networking:1.0.2")
+  
+  // Bluetooth and BLE
+  implementation("com.polidea.rxandroidble2:rxandroidble:1.18.0")
+  
+  // Coroutines
+  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+  
+  // MultiDex
+  implementation("androidx.multidex:multidex:2.0.1")
+}
+```
+
+## GlassesSDKSample Project Dependencies
+File: GlassesSDKSample/app/build.gradle
+
+```gradle
+dependencies {
+    implementation files("libs/glasses_sdk_20250723_v01.aar")
+    implementation(libs.androidx.core.ktx)
+
+    implementation("com.google.android.material:material:1.12.0")
+    implementation("com.github.getActivity:XXPermissions:20.0")
+    implementation("org.greenrobot:eventbus:3.2.0")
+    implementation("com.github.ForgetAll:LoadingDialog:v1.1.2")
+    implementation("androidx.localbroadcastmanager:localbroadcastmanager:1.1.0")
+    implementation("com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4")
+}
+```
+
+## GlassesSDKSample Version Catalog
+File: GlassesSDKSample/gradle/libs.versions.toml
+
+```toml
+[versions]
+agp = "8.6.0"
+kotlin = "1.8.0"
+coreKtx = "1.16.0"
+junit = "4.14-SNAPSHOT"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.9.2"
+activityCompose = "1.10.1"
+composeBom = "2024.04.01"
+appcompat = "1.7.1"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+```
+
+## Permission Requirements
+File: heycyan_rev/app/src/main/AndroidManifest.xml
+
+```xml
+<!-- BLE Permissions -->
+<uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+<uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+<uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+<uses-permission android:name="android.permission.BLUETOOTH"/>
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+<!-- WiFiP2P Permissions -->
+<uses-feature android:name="android.hardware.wifi.direct" android:required="true"/>
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES"/>
+
+<!-- Location Permissions (required for BLE scanning) -->
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+<!-- Storage Permissions -->
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+```

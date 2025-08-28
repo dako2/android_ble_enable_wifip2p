@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BLE WiFiP2P</string>
+    
+    <!-- Main Activity -->
+    <string name="scan_devices">Scan Devices</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="file_transfer">File Transfer</string>
+    <string name="ota_update">OTA Update</string>
+    <string name="settings">Settings</string>
+    
+    <!-- Status -->
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_connecting">Connecting...</string>
+    <string name="status_connected">Connected</string>
+    <string name="status_scanning">Scanning...</string>
+    <string name="status_transferring">Transferring...</string>
+    
+    <!-- Messages -->
+    <string name="msg_ble_not_enabled">Bluetooth is not enabled</string>
+    <string name="msg_scanning_started">Scanning started</string>
+    <string name="msg_scanning_stopped">Scanning stopped</string>
+    <string name="msg_device_connected">Device connected</string>
+    <string name="msg_device_disconnected">Device disconnected</string>
+    <string name="msg_permission_required">Permission required</string>
+    <string name="msg_transfer_complete">Transfer complete</string>
+    <string name="msg_transfer_failed">Transfer failed</string>
+    
+    <!-- Buttons -->
+    <string name="btn_scan">Scan</string>
+    <string name="btn_connect">Connect</string>
+    <string name="btn_disconnect">Disconnect</string>
+    <string name="btn_transfer_files">Transfer Files</string>
+    <string name="btn_ota_update">OTA Update</string>
+    <string name="btn_camera">Camera</string>
+    <string name="btn_video">Video</string>
+    <string name="btn_record">Record</string>
+    <string name="btn_battery">Battery</string>
+    <string name="btn_volume">Volume</string>
+    <string name="btn_cancel">Cancel</string>
+    
+    <!-- Tabs -->
+    <string name="tab_ble">BLE</string>
+    <string name="tab_wifip2p">WiFiP2P</string>
+    <string name="tab_transfer">Transfer</string>
+    
+    <!-- Errors -->
+    <string name="error_permission_denied">Permission denied</string>
+    <string name="error_ble_not_supported">BLE not supported</string>
+    <string name="error_wifip2p_not_supported">WiFiP2P not supported</string>
+    <string name="error_connection_failed">Connection failed</string>
+    <string name="error_transfer_failed">Transfer failed</string>
+    
+    <!-- Progress -->
+    <string name="progress_connecting">Connecting...</string>
+    <string name="progress_transferring">Transferring...</string>
+    <string name="progress_uploading">Uploading...</string>
+    <string name="progress_downloading">Downloading...</string>
+</resources>
