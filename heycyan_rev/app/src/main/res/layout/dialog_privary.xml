@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_rect_corner_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="20.0sp" android:textColor="@color/g_color_1" android:id="@id/tv_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/china_glasses_3" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textColor="@color/g_color_1" android:id="@id/tv_privacy_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" android:text="@string/china_glasses_6" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_note" />
+    <View android:id="@id/line" android:background="@color/g_et_hint_color" android:layout_width="fill_parent" android:layout_height="0.25dip" android:layout_marginTop="10.0dip" app:layout_constraintTop_toBottomOf="@id/tv_privacy_tips" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_to_do" android:layout_width="fill_parent" android:layout_height="40.0dip" app:layout_constraintTop_toBottomOf="@id/line">
+        <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_1A7CE7" android:id="@id/btn_exit" android:background="@null" android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_marginTop="4.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/china_glasses_1" android:layout_weight="1.0" />
+        <View android:background="@color/white" android:layout_width="0.25dip" android:layout_height="40.0dip" />
+        <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/color_1A7CE7" android:id="@id/btn_enter" android:background="@null" android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_marginTop="4.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/china_glasses_2" android:layout_weight="1.0" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

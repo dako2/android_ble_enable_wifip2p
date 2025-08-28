@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rcy_year" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/rcy_month" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rcy_month" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constraintLeft_toRightOf="@id/rcy_year" app:layout_constraintRight_toLeftOf="@id/rcy_day" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rcy_day" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constraintLeft_toRightOf="@id/rcy_month" app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

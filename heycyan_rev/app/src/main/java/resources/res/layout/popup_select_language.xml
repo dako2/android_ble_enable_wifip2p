@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cls_content"
+        android:background="@drawable/main_dialog_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/glass_dp_540"
+        app:layout_constraintTop_toTopOf="parent">
+        <EditText
+            android:textSize="@dimen/glass_sp_14"
+            android:textColor="@color/g_white"
+            android:textColorHint="@color/g_et_hint_color"
+            android:id="@+id/et_search"
+            android:background="@drawable/bg_white15_6_shape"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/glass_dp_12"
+            android:hint="@string/g_account_8"
+            android:singleLine="true"
+            android:paddingStart="@dimen/glass_dp_38"
+            android:paddingEnd="@dimen/glass_dp_12"
+            android:layout_marginStart="@dimen/glass_dp_16"
+            android:layout_marginEnd="@dimen/glass_dp_16"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="@dimen/glass_dp_15"
+            android:layout_height="@dimen/glass_dp_15"
+            android:src="@mipmap/ic_language_search"
+            android:layout_marginStart="@dimen/glass_dp_12"
+            app:layout_constraintBottom_toBottomOf="@+id/et_search"
+            app:layout_constraintLeft_toLeftOf="@+id/et_search"
+            app:layout_constraintTop_toTopOf="@+id/et_search"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcy_language"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/glass_dp_8"
+            android:layout_marginBottom="@dimen/glass_dp_8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_search"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+package com.google.firebase.crashlytics.buildtools.reloc.com.google.common.graph;
+
+import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.base.Preconditions;
+import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.collect.ImmutableSet;
+import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.collect.Iterators;
+import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.collect.UnmodifiableIterator;
+import com.google.firebase.crashlytics.buildtools.reloc.org.checkerframework.checker.nullness.compatqual.NullableDecl;
+import java.util.AbstractSet;
+import java.util.Map;
+
+/* loaded from: classes2.dex */
+final class EdgesConnecting<E> extends AbstractSet<E> {
+    private final Map<?, E> nodeToOutEdge;
+    private final Object targetNode;
+
+    EdgesConnecting(Map<?, E> map, Object obj) {
+        this.nodeToOutEdge = (Map) Preconditions.checkNotNull(map);
+        this.targetNode = Preconditions.checkNotNull(obj);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
+    public UnmodifiableIterator<E> iterator() {
+        E connectingEdge = getConnectingEdge();
+        if (connectingEdge == null) {
+            return ImmutableSet.m382of().iterator();
+        }
+        return Iterators.singletonIterator(connectingEdge);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public int size() {
+        return getConnectingEdge() == null ? 0 : 1;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
+    public boolean contains(@NullableDecl Object obj) {
+        E connectingEdge = getConnectingEdge();
+        return connectingEdge != null && connectingEdge.equals(obj);
+    }
+
+    @NullableDecl
+    private E getConnectingEdge() {
+        return this.nodeToOutEdge.get(this.targetNode);
+    }
+}

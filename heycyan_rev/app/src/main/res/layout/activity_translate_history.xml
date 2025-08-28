@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/main" android:background="@color/g_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/layout_title_bar" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/glass_dp_8" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/title" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/chat_no_data" android:background="@color/g_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/title">
+        <ImageView android:id="@id/ivImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/glass_dp_26" android:src="@mipmap/ai_no_data" android:contentDescription="@string/app_image_desc" app:layout_constraintBottom_toTopOf="@id/tv_desc" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+        <TextView android:textSize="@dimen/glass_sp_18" android:textColor="@color/g_color_common_1" android:ellipsize="marquee" android:gravity="center" android:id="@id/tv_desc" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxWidth="@dimen/glass_dp_200" android:text="@string/h_glass_125" android:layout_marginStart="@dimen/glass_dp_16" android:layout_marginEnd="@dimen/glass_dp_16" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

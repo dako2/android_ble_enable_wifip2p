@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape>
+            <stroke android:width="@dimen/glass_dp_1" android:color="@color/g_connect_text_1" />
+            <solid android:color="@color/g_color_8" />
+            <corners android:radius="@dimen/glass_dp_5" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/g_color_8" />
+            <corners android:radius="@dimen/glass_dp_5" />
+        </shape>
+    </item>
+</selector>

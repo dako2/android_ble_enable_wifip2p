@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/main" android:background="@color/g_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/layout_title_bar" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/title">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/glass_sp_16" android:textColor="@color/g_white" android:ellipsize="marquee" android:id="@id/tv_desc_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/glass_dp_26" android:text="@string/g_feedback_3" android:singleLine="true" android:layout_marginStart="@dimen/glass_dp_16" android:layout_marginEnd="@dimen/glass_dp_16" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rcy_question" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/glass_dp_14" android:layout_marginEnd="@dimen/glass_dp_16" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_desc_1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

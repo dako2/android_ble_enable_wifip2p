@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/main" android:background="@color/g_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/layout_title_bar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_1" android:background="@drawable/main_setting_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/glass_dp_24" android:layout_marginStart="@dimen/glass_dp_16" android:layout_marginEnd="@dimen/glass_dp_16" app:layout_constraintTop_toBottomOf="@id/title">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cls_logoff" android:background="@drawable/main_setting_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/glass_dp_54" app:layout_constraintTop_toBottomOf="@id/cls_top">
+            <TextView android:textSize="@dimen/glass_sp_14" android:textColor="@color/g_color_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/h_glass_259" android:layout_marginStart="@dimen/glass_dp_20" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="@dimen/glass_sp_12" android:textColor="@color/color_A8A8A8" android:id="@id/tv_safety_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/glass_dp_10" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toLeftOf="@id/iv_arrow2" app:layout_constraintTop_toTopOf="parent" />
+            <ImageView android:id="@id/iv_arrow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_enter_gray" android:contentDescription="@string/app_image_desc" android:layout_marginEnd="@dimen/glass_dp_20" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

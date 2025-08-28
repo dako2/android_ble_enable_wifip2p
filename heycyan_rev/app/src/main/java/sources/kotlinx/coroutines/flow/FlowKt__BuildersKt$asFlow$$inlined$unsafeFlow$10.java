@@ -1,0 +1,92 @@
+package kotlinx.coroutines.flow;
+
+import com.google.firebase.crashlytics.buildtools.ndk.internal.elf.EMachine;
+import java.util.Iterator;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.collections.LongIterator;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.Boxing;
+import kotlin.coroutines.jvm.internal.ContinuationImpl;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.ranges.LongRange;
+
+/* compiled from: SafeCollector.common.kt */
+@Metadata(m606d1 = {"\u0000\u0019\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002*\u0001\u0000\b\n\u0018\u00002\b\u0012\u0004\u0012\u00028\u00000\u0001J\u001f\u0010\u0002\u001a\u00020\u00032\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00028\u00000\u0005H\u0096@ø\u0001\u0000¢\u0006\u0002\u0010\u0006\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006\u0007¸\u0006\u0000"}, m607d2 = {"kotlinx/coroutines/flow/internal/SafeCollector_commonKt$unsafeFlow$1", "Lkotlinx/coroutines/flow/Flow;", "collect", "", "collector", "Lkotlinx/coroutines/flow/FlowCollector;", "(Lkotlinx/coroutines/flow/FlowCollector;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "kotlinx-coroutines-core"}, m608k = 1, m609mv = {1, 8, 0}, m611xi = 48)
+/* loaded from: classes3.dex */
+public final class FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$10 implements Flow<Long> {
+    final /* synthetic */ LongRange $this_asFlow$inlined;
+
+    /* compiled from: SafeCollector.common.kt */
+    @Metadata(m608k = 3, m609mv = {1, 8, 0}, m611xi = 48)
+    @DebugMetadata(m619c = "kotlinx.coroutines.flow.FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$10", m620f = "Builders.kt", m621i = {0}, m622l = {EMachine.EM_C166}, m623m = "collect", m624n = {"$this$asFlow_u24lambda_u2419"}, m625s = {"L$0"})
+    /* renamed from: kotlinx.coroutines.flow.FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$10$1 */
+    public static final class C27781 extends ContinuationImpl {
+        Object L$0;
+        Object L$1;
+        int label;
+        /* synthetic */ Object result;
+
+        public C27781(Continuation continuation) {
+            super(continuation);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+        public final Object invokeSuspend(Object obj) {
+            this.result = obj;
+            this.label |= Integer.MIN_VALUE;
+            return FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$10.this.collect(null, this);
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:7:0x0014  */
+    @Override // kotlinx.coroutines.flow.Flow
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public Object collect(FlowCollector<? super Long> flowCollector, Continuation<? super Unit> continuation) {
+        C27781 c27781;
+        FlowCollector flowCollector2;
+        Iterator<Long> it;
+        if (continuation instanceof C27781) {
+            c27781 = (C27781) continuation;
+            if ((c27781.label & Integer.MIN_VALUE) != 0) {
+                c27781.label -= Integer.MIN_VALUE;
+            } else {
+                c27781 = new C27781(continuation);
+            }
+        }
+        Object obj = c27781.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = c27781.label;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            flowCollector2 = flowCollector;
+            it = this.$this_asFlow$inlined.iterator();
+        } else {
+            if (i != 1) {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            it = (Iterator) c27781.L$1;
+            FlowCollector flowCollector3 = (FlowCollector) c27781.L$0;
+            ResultKt.throwOnFailure(obj);
+            flowCollector2 = flowCollector3;
+        }
+        while (it.hasNext()) {
+            Long lBoxLong = Boxing.boxLong(((LongIterator) it).nextLong());
+            c27781.L$0 = flowCollector2;
+            c27781.L$1 = it;
+            c27781.label = 1;
+            if (flowCollector2.emit(lBoxLong, c27781) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        }
+        return Unit.INSTANCE;
+    }
+
+    public FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$10(LongRange longRange) {
+        this.$this_asFlow$inlined = longRange;
+    }
+}

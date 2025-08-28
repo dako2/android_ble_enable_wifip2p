@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cls_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/glass_dp_62">
+    <TextView
+        android:textSize="@dimen/glass_sp_14"
+        android:textColor="@color/g_white"
+        android:gravity="center"
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/glass_sp_34"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/iv_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_recording_setting_checked"
+        android:contentDescription="@string/app_image_desc"
+        android:layout_marginEnd="@dimen/glass_dp_26"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textSize="@dimen/glass_sp_10"
+        android:textColor="@color/g_album_record_3"
+        android:id="@+id/tv_desc"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/glass_dp_2"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"/>
+    <View
+        android:id="@+id/view_line"
+        android:background="@color/color_3D3D3D"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/glass_dp_1"
+        android:layout_marginStart="@dimen/glass_dp_20"
+        android:layout_marginEnd="@dimen/glass_dp_20"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
